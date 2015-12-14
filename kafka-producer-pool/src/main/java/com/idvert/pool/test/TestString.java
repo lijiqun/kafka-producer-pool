@@ -14,7 +14,6 @@ public class TestString {
 		pool.setConfig(config);
 		for (int i = 0; i < 10; i++) {
 			pool.addObject();
-			Thread.sleep(1000);
 		}
 		
 		for(int i=0;i<16;i++){
@@ -24,7 +23,7 @@ public class TestString {
 			System.out.println(borrow);
 			System.out.println("active : "+pool.getNumActive());
 			System.out.println("idle : "+pool.getNumIdle());
-			
+			Thread.sleep(1000);
 		}
 		
 //		System.out.println("active : "+pool.getNumActive());
