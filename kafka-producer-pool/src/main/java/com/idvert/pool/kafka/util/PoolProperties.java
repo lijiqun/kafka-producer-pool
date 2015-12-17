@@ -1,4 +1,4 @@
-package com.idvert.pool.kafka.pool;
+package com.idvert.pool.kafka.util;
 
 import java.io.IOException;
 import java.io.InputStream;

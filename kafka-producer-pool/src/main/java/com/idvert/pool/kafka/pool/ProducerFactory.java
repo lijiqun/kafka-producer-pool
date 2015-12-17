@@ -4,6 +4,9 @@ import org.apache.commons.pool2.BasePooledObjectFactory;
 import org.apache.commons.pool2.PooledObject;
 import org.apache.commons.pool2.impl.DefaultPooledObject;
 
+import com.idvert.pool.kafka.producer.IKafkaProducer;
+import com.idvert.pool.kafka.producer.KafkaProducer;
+
 public class ProducerFactory extends BasePooledObjectFactory<IKafkaProducer> {
 
 	private KafkaProducer p;
@@ -24,9 +27,5 @@ public class ProducerFactory extends BasePooledObjectFactory<IKafkaProducer> {
 		return new DefaultPooledObject<IKafkaProducer>(arg0);
 	}
 	
-	@Override
-	public void destroyObject(PooledObject<IKafkaProducer> p) throws Exception {
-		this.p.close();
-	}
 
 }

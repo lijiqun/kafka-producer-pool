@@ -1,6 +1,8 @@
-package com.idvert.pool.kafka.pool;
+package com.idvert.pool.kafka.producer;
 
 import java.util.Properties;
+
+import com.idvert.pool.kafka.util.ProducerProperties;
 
 import kafka.javaapi.producer.Producer;
 import kafka.producer.KeyedMessage;

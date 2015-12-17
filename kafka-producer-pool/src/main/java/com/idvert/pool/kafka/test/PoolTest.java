@@ -1,4 +1,8 @@
-package com.idvert.pool.kafka.pool;
+package com.idvert.pool.kafka.test;
+
+import com.idvert.pool.kafka.pool.ProducerFactory;
+import com.idvert.pool.kafka.pool.ProducerPool;
+import com.idvert.pool.kafka.producer.IKafkaProducer;
 
 public class PoolTest {
 	
