@@ -10,12 +10,11 @@ import com.idvert.pool.kafka.producer.KafkaProducer;
 public class ProducerKeydFactory extends BaseKeyedPooledObjectFactory<String, IKafkaProducer> {
 	
 	private KafkaProducer p;
-	private String topic;
 	
 	@Override
 	public IKafkaProducer create(String key) throws Exception {
-		// TODO Auto-generated method stub
-		return null;
+		p = new KafkaProducer(key);
+		return p;
 	}
 
 	@Override

@@ -28,6 +28,7 @@ public class PoolTest {
 			System.out.println("idle : "+pool.getNumIdle());
 			try {
 				producer = pool.borrowObject();
+				producer.send("msg.....".getBytes());
 				Thread.sleep(1000);
 			} catch (Exception e) {
 				e.printStackTrace();
